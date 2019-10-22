@@ -1,21 +1,25 @@
 <?php
 //課題1
 function double($d){
-    $result =0;
-    $result = $d*2;
-    return $result;
+    return $d*2;
 }
 echo double(2)." ".double(1.5)." ".double(5.2)."\n";
 //課題2
 function f($a,$b){
-    $result =0;
-    $result =$a+$b;
-    return $result;
+    return $a+$b;
 }
 echo f(1,2)." ".f(5.5,4.5)." ".f(5.5,4)."\n";
 //課題3
 $arr =array(1, 3, 5 ,7, 9);
-print_r($arr);
+function multi($arr){
+    $result =1;
+    foreach($arr as $a){
+        $result *= $a;
+    }
+    return $result;
+}
+echo "課題3修正:";
+echo multi($arr)."\n";
 //課題4
 function max_array($arr){
     $max_number = $arr[0];
